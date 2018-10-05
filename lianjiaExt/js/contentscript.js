@@ -7,7 +7,7 @@ console.log(obj);
 chrome.runtime.sendMessage({content: obj}, function (response) {
     console.log("接收到消息响应，以图标方式展示该房屋最近价格");
     console.log(response.farewell);
-    var iframe = '<iframe src="https://tmp.tunnel.echomod.cn/showHousePrice/' + houseCode + '" style="position:fixed;width:960px;height:180px;bottom:0;right:0;text-align:center;button:0px"></iframe>';
+    var iframe = '<iframe src="https://kweb.xiaomiqiu.com/showHousePrice/' + houseCode + '" style="position:fixed;width:960px;height:180px;bottom:0;right:0;text-align:center;button:0px"></iframe>';
     //var iframe = '<iframe src="https://www.baidu.com/' + houseCode + '" style="position:fixed;width:960px;height:150px;bottom:0;right:0;text-align:center;button:0px"></iframe>';
     $('body').append(iframe);
 
